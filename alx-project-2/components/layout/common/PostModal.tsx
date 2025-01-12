@@ -20,6 +20,16 @@ const PostModal = ({ isOpen, onClose, onAddPost }: PostModalProps) => {
     onClose();
   };
 
+  const PostCard = ({ title, content, userId }: PostProps) => {
+    return (
+      <div className="bg-white shadow-md rounded-lg p-4 mb-4">
+        <h2 className="text-lg font-bold mb-2">{title}</h2>
+        <p className="text-gray-600">{content}</p>
+        <p className="text-gray-600">Posted by user {userId}</p>
+      </div>
+    );
+  };
+
   return (
     <Transition appear show={isOpen} as={React.Fragment}>
       <Dialog as="div" className="relative z-10" onClose={onClose}>

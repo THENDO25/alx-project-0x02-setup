@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 import Header from '../components/layout/Header';
 
-const About: NextPage = () => {
+const Posts: NextPage = () => {
   return (
     <div>
       <Header />
-      <h1 className="text-3xl font-bold mb-4">About Page</h1>
+      <h1 className="text-3xl font-bold mb-4">Posts Page</h1>
     </div>
   );
 };
 
-export default About;
+export default Posts;
